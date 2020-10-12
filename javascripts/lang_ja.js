@@ -65,6 +65,8 @@
            holidays[day] = '成人の日';
          } else if (day == 11 && month == ProtoCalendar.FEB && 1967 <= year) {
            holidays[day] = '建国記念の日';
+         } else if (day == 23 && month == ProtoCalendar.FEB && 2020 <= year) {
+           holidays[day] = '天皇誕生日';
          } else if (day == springDay && month == ProtoCalendar.MAR) {
            holidays[day] = '春分の日';
          } else if (day == 29 && month == ProtoCalendar.APR && 1989 <= year && year < 2007) {
@@ -83,8 +85,14 @@
            holidays[day] = 'こどもの日';
          } else if (day == 20 && month == ProtoCalendar.JULY && 1996 <= year && year < 2003) {
            holidays[day] = '海の日';
-         } else if (mondayIndex == 3 && month == ProtoCalendar.JULY && dayOfWeek == ProtoCalendar.MONDAY && 2003 <= year) {
+         } else if (mondayIndex == 3 && month == ProtoCalendar.JULY && dayOfWeek == ProtoCalendar.MONDAY && 2003 <= year && year < 2020) {
            holidays[day] = '海の日';
+         } else if (day == 20 && month == ProtoCalendar.JULY && 2020 <= year && year < 2021) {
+           holidays[day] = '海の日';
+         } else if (mondayIndex == 3 && month == ProtoCalendar.JULY && dayOfWeek == ProtoCalendar.MONDAY && 2021 <= year) {
+           holidays[day] = '海の日';
+         } else if (day == 24 && month == ProtoCalendar.JULY && 2020 <= year && year < 2021) {
+           holidays[day] = 'スポーツの日';
          } else if (day == 15 && month == ProtoCalendar.SEPT && 1966 <= year && year < 2003) {
            holidays[day] = '敬老の日';
          } else if (mondayIndex == 3 && month == ProtoCalendar.SEPT && dayOfWeek == ProtoCalendar.MONDAY && 2003 <= year) {
@@ -93,13 +101,15 @@
            holidays[day] = '秋分の日';
          } else if (day == 10 && month == ProtoCalendar.OCT && 1966 <= year && year < 2001) {
            holidays[day] = '体育の日';
-         } else if (mondayIndex == 2 && month == ProtoCalendar.OCT && dayOfWeek == ProtoCalendar.MONDAY && 2000 <= year) {
+         } else if (mondayIndex == 2 && month == ProtoCalendar.OCT && dayOfWeek == ProtoCalendar.MONDAY && 2000 <= year && year < 2020) {
            holidays[day] = '体育の日';
-         } else if (day == 3 && month == ProtoCalendar.NOV && 1948 <= year) {
+         } else if (mondayIndex == 2 && month == ProtoCalendar.OCT && dayOfWeek == ProtoCalendar.MONDAY && 2021 <= year) {
+           holidays[day] = 'スポーツの日';
+         }  else if (day == 3 && month == ProtoCalendar.NOV && 1948 <= year) {
            holidays[day] = '文化の日';
          } else if (day == 23 && month == ProtoCalendar.NOV && 1948 <= year) {
            holidays[day] = '勤労感謝の日';
-         } else if (day == 23 && month == ProtoCalendar.DEC && 1989 <= year) {
+         } else if (day == 23 && month == ProtoCalendar.DEC && 1989 <= year && year < 2019) {
            holidays[day] = '天皇誕生日';
          }
        }
