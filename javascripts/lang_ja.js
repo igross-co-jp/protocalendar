@@ -87,7 +87,7 @@
            holidays[day] = '海の日';
          } else if (mondayIndex == 3 && month == ProtoCalendar.JULY && dayOfWeek == ProtoCalendar.MONDAY && 2003 <= year && year != 2020) {
            holidays[day] = '海の日';
-         } else if (day == 20 && month == ProtoCalendar.JULY && year == 2020) {
+         } else if (day == 23 && month == ProtoCalendar.JULY && year == 2020) {
            holidays[day] = '海の日';
          } else if (day == 24 && month == ProtoCalendar.JULY && year == 2020) {
            holidays[day] = 'スポーツの日';
